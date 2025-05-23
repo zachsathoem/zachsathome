@@ -198,4 +198,7 @@ footer {
     nav a{
         font-size: 30px;
     }
+    .links{
+        width:80%;
+    }
 }
