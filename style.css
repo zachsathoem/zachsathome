@@ -43,19 +43,36 @@ h1 {
     padding: 15px;
 }
 
-.nuts{
+.nuts {
     margin: auto;
     font-size: 20px;
-    width: 200px;
+    width: fit-content;
     background-color: white;
     border-radius: 10px;
     text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease; /* enable animation */
 }
 
-.nuts a{
-    font-family: Arial;
+.nuts:hover {
+    transform: scale(1.05); /* spin the whole box */
+}
+
+.nuts a {
+    width:230px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
     color: rgb(85, 85, 114);
     text-decoration: none;
+}
+  
+.nuts img {
+    width: 50px;
+    height: auto;
 }
 
 h2 {
@@ -104,7 +121,7 @@ nav a {
 }
 
 nav a:hover {
-      font-family: Arial;
+    font-family: Arial;
     font-weight: bold;
 }
 
