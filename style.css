@@ -1,0 +1,201 @@
+* {
+    /* *  mengaturr semua element*/
+    margin : 0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    font-family: Arial;
+}
+header{
+    font-family: Arial;
+}
+
+
+header img{
+    transition:transform(0.3s) ease;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+nav{
+    font-family: Arial;
+}
+
+h1 {
+    font-family: Arial;
+    text-align: center;
+    color:white;
+}
+
+.links{
+    width: 500px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    background-color: rgb(85, 85, 114);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+    gap: 10px;
+    padding: 15px;
+}
+
+.nuts{
+    margin: auto;
+    font-size: 20px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.nuts a{
+    font-family: Arial;
+    color: rgb(85, 85, 114);
+    text-decoration: none;
+}
+
+h2 {
+    font-family: Arial;
+    text-align: center;
+    color:white;
+}
+
+p {
+    font-family: Arial;
+    text-align: center;
+    color:white;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+img{
+    transition:transform(0.3s) ease;
+}
+
+body {
+    background-color:rgb(85, 85, 114);
+    color:rgb(0, 0, 0);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(85, 85, 114);
+    padding: 20px;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18 px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+nav a:hover {
+      font-family: Arial;
+    font-weight: bold;
+}
+
+.homepage {
+    background-image: url("img/checkers\ but\ 1080p.png");
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-content {
+    text-align: center;
+    color: white
+}
+
+.homepage-content h2{
+    font-size: 48px;
+}
+
+.gallery-section{
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px black;
+    transition: transform 0.3s ease;
+}
+
+.gallery-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.gallery-section h2{
+    text-align: center;
+    margin: 20px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgb(85, 85, 114);
+    text-align: center;
+    padding: 20px;
+    color:white;
+    margin-top: 30px;
+    font-family: Arial;
+}
+.nav-mobile li:hover {
+    transform: scale(1.5);
+}
+
+.nav-mobile li{
+    transition: transform 0.3s ease;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .nav-mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .shortcat {
+        display: inline-block;
+    }
+    nav {
+        gap: 20px;
+    }
+
+    nav a{
+        font-size: 30px;
+    }
+}
