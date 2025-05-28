@@ -13,9 +13,7 @@ header{
     font-family: Arial;
 }
 
-
 header img{
-    transition:transform(0.3s) ease;
     width: 200px;
     height: 200px;
     border-radius: 100px;
@@ -105,7 +103,7 @@ nav li{
 }
 
 nav a {
-    font-size: 18 px;
+    font-size: 18px; /* fixed spacing */
     font-weight: 300;
     text-decoration: none;
     color: white;
@@ -118,7 +116,7 @@ nav a:hover {
 }
 
 .homepage {
-    background-image: url("img/checkers\ but\ 1080p.png");
+    background-image: url("img/assets/checkers but 1080p.png");
     background-size: cover;
     background-position: center;
     height: 45vh;
@@ -138,26 +136,7 @@ nav a:hover {
 
 .gallery-section{
     text-align: center;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
-
-.gallery img {
-    margin: 0 auto;
-    width: 70%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px black;
-    transition: transform 0.3s ease;
-}
-
-.gallery-section {
     padding: 50px;
-    text-align: center;
 }
 
 .gallery-section h2{
@@ -165,8 +144,35 @@ nav a:hover {
     margin: 20px;
 }
 
+/* Pinterest-style masonry gallery */
+.gallery {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px black;
+    transition: transform 0.3s ease;
+}
+
 .gallery img:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        column-count: 1;
+    }
 }
 
 @keyframes spin {
@@ -211,7 +217,6 @@ nav a:hover {
     font-family: arial;
     text-align: center;
 }
-
 
 footer {
     background-color: rgb(85, 85, 114);
